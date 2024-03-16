@@ -1,0 +1,132 @@
+@import "fonts_mixin";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat Alternates;
+    color: #2a2a2a;
+}
+
+h1,
+h2,
+h3,
+p {
+    line-height: 140%;
+}
+
+/* Header */
+.header {
+    .phone {
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #2a2a2a;
+
+        &:hover {
+            color: rgb(255, 135, 209);
+        }
+    }
+    .menu {
+        a {
+            color: #2a2a2a;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: rgb(255, 135, 209);
+                transition: width 0.5s ease;
+            }
+
+            &:hover {
+                color: #2a2a2a;
+
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .social {
+        img {
+            transition: transform 0.6s ease;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+/* Content */
+.hint {
+    font-family: "Montserrat Alternates";
+    text-transform: uppercase;
+}
+
+.cards {
+    img {
+        border: 1px solid #eeeeee;
+        border-radius: 20px;
+        transition: box-shadow 0.6s ease;
+        &:hover {
+            box-shadow: 1px 1px 20px 0 rgba(42, 42, 42, 0.15);
+        }
+    }
+}
+
+/* Footer */
+.menu {
+    a {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2a2a2a;
+        text-decoration: none;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: rgb(255, 135, 209);
+            transition: width 0.5s ease;
+        }
+
+        &:hover {
+            color: #2a2a2a;
+
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 5px 30px;
+    border-radius: 20px;
+    background: #2a2a2a;
+
+    a {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 10px;
+        }
+    }
+    &:hover {
+        background: #2a2a2a;
+        box-shadow: 1px 1px 20px 0 rgba(42, 42, 42, 0.15);
+    }
+}
